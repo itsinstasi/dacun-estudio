@@ -1,2 +1,2 @@
 ﻿User-agent: *
-Sitemap: https://etnoox.itsinstasi.site/sitemap.xml
+Sitemap: https://dacun-estudio.itsinsta.site/sitemap.xml
