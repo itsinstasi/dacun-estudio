@@ -1,0 +1,857 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>render</title>
+    <meta name="title" content="render">
+    
+    <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/> 
+    <script async src="https://use.fontawesome.com/d758daec41.js"></script>   
+	<link rel="stylesheet" href="../css/style.css"/>
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#fff">
+    <meta name="msapplication-TileImage" content="../img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#fff">
+
+</head>
+<body>
+    <!--[if lt IE 8]>
+        <p class="browserhappy">
+            Ваш браузер <strong>устарел</strong>. Пожалуйста <a href="https://browsehappy.com/"  target="_blank">обновите</a>.
+        </p>
+    <![endif]-->
+    <noscript>
+		Вам нужно включить JavaScript в своем браузере, чтобы  отображение этой страницы было корректно.
+    </noscript>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__wrap">
+					<div class="header__left">
+						<a href="../main.html" class="header__logo">
+							<div class="header__logo-pic"><img src="https://scontent-arn2-2.cdninstagram.com/vp/4ce1250070a1bf5b3502ffaf80d558bd/5E3D73DB/t51.2885-19/s150x150/25007814_1780901171943988_5141654355342000128_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com" alt="Alejandro DAcun"></div>
+							<div class="header__logo-txt">dacun_estudio</div>
+						</a>
+						<div class="header__title">Alejandro DAcun</div>
+					</div>
+					<!--<div class="header__right">
+						<form action="#" method="get" class="search">
+							<input type="search" class="input search__input" placeholder="Поиск">
+							<button class="btn search__btn" type="submit" title="Искать"><i class="fa fa-search" aria-hidden="true"></i></button>
+						</form>
+					</div>-->
+				</div>
+			</div>
+		</header>	
+		<div class="main">
+			<div class="stories" style="display: none;">
+				<div class="container">
+					<div class="stories__slider" id="js-stories-slider">
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="dacun lo crea">
+								<a href="./dacun-lo-crea.html">
+									<div class="stories__slide-pic"><img src="../img/og/dacun-lo-crea.png" alt="dacun lo crea" /></div>
+									<div class="stories__slide-txt">dacun lo crea</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="españa">
+								<a href="./españa.html">
+									<div class="stories__slide-pic"><img src="../img/og/españa.png" alt="españa" /></div>
+									<div class="stories__slide-txt">españa</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="teneri fe">
+								<a href="./teneri-fe.html">
+									<div class="stories__slide-pic"><img src="../img/og/teneri-fe.png" alt="teneri fe" /></div>
+									<div class="stories__slide-txt">teneri fe</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="diseño">
+								<a href="./diseño.html">
+									<div class="stories__slide-pic"><img src="../img/og/diseño.png" alt="diseño" /></div>
+									<div class="stories__slide-txt">diseño</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="design">
+								<a href="./design.html">
+									<div class="stories__slide-pic"><img src="../img/og/design.png" alt="design" /></div>
+									<div class="stories__slide-txt">design</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="arq uitect ura">
+								<a href="./arq-uitect-ura.html">
+									<div class="stories__slide-pic"><img src="../img/og/arq-uitect-ura.png" alt="arq uitect ura" /></div>
+									<div class="stories__slide-txt">arq uitect ura</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="proyecto">
+								<a href="./proyecto.html">
+									<div class="stories__slide-pic"><img src="../img/og/proyecto.png" alt="proyecto" /></div>
+									<div class="stories__slide-txt">proyecto</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="diseño indus trial">
+								<a href="./diseño-indus-trial.html">
+									<div class="stories__slide-pic"><img src="../img/og/diseño-indus-trial.png" alt="diseño indus trial" /></div>
+									<div class="stories__slide-txt">diseño indus trial</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="sketch">
+								<a href="./sketch.html">
+									<div class="stories__slide-pic"><img src="../img/og/sketch.png" alt="sketch" /></div>
+									<div class="stories__slide-txt">sketch</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="yosoy dacun">
+								<a href="./yosoy-dacun.html">
+									<div class="stories__slide-pic"><img src="../img/og/yosoy-dacun.png" alt="yosoy dacun" /></div>
+									<div class="stories__slide-txt">yosoy dacun</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="art">
+								<a href="./art.html">
+									<div class="stories__slide-pic"><img src="../img/og/art.png" alt="art" /></div>
+									<div class="stories__slide-txt">art</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="diseño int erior">
+								<a href="./diseño-int-erior.html">
+									<div class="stories__slide-pic"><img src="../img/og/diseño-int-erior.png" alt="diseño int erior" /></div>
+									<div class="stories__slide-txt">diseño int erior</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="venezuela">
+								<a href="./venezuela.html">
+									<div class="stories__slide-pic"><img src="../img/og/venezuela.png" alt="venezuela" /></div>
+									<div class="stories__slide-txt">venezuela</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="archi tec ture">
+								<a href="./archi-tec-ture.html">
+									<div class="stories__slide-pic"><img src="../img/og/archi-tec-ture.png" alt="archi tec ture" /></div>
+									<div class="stories__slide-txt">archi tec ture</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="teneri fesur">
+								<a href="./teneri-fesur.html">
+									<div class="stories__slide-pic"><img src="../img/og/teneri-fesur.png" alt="teneri fesur" /></div>
+									<div class="stories__slide-txt">teneri fesur</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="teneri fe norte">
+								<a href="./teneri-fe-norte.html">
+									<div class="stories__slide-pic"><img src="../img/og/teneri-fe-norte.png" alt="teneri fe norte" /></div>
+									<div class="stories__slide-txt">teneri fe norte</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="render">
+								<a href="./render.html">
+									<div class="stories__slide-pic"><img src="../img/og/render.png" alt="render" /></div>
+									<div class="stories__slide-txt">render</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="renders">
+								<a href="./renders.html">
+									<div class="stories__slide-pic"><img src="../img/og/renders.png" alt="renders" /></div>
+									<div class="stories__slide-txt">renders</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="a coruña">
+								<a href="./a-coruña.html">
+									<div class="stories__slide-pic"><img src="../img/og/a-coruña.png" alt="a coruña" /></div>
+									<div class="stories__slide-txt">a coruña</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="ideas">
+								<a href="./ideas.html">
+									<div class="stories__slide-pic"><img src="../img/og/ideas.png" alt="ideas" /></div>
+									<div class="stories__slide-txt">ideas</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="color">
+								<a href="./color.html">
+									<div class="stories__slide-pic"><img src="../img/og/color.png" alt="color" /></div>
+									<div class="stories__slide-txt">color</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="indus trial design">
+								<a href="./indus-trial-design.html">
+									<div class="stories__slide-pic"><img src="../img/og/indus-trial-design.png" alt="indus trial design" /></div>
+									<div class="stories__slide-txt">indus trial design</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="arte">
+								<a href="./arte.html">
+									<div class="stories__slide-pic"><img src="../img/og/arte.png" alt="arte" /></div>
+									<div class="stories__slide-txt">arte</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="design er">
+								<a href="./design-er.html">
+									<div class="stories__slide-pic"><img src="../img/og/design-er.png" alt="design er" /></div>
+									<div class="stories__slide-txt">design er</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="insta design">
+								<a href="./insta-design.html">
+									<div class="stories__slide-pic"><img src="../img/og/insta-design.png" alt="insta design" /></div>
+									<div class="stories__slide-txt">insta design</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="home">
+								<a href="./home.html">
+									<div class="stories__slide-pic"><img src="../img/og/home.png" alt="home" /></div>
+									<div class="stories__slide-txt">home</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="crea ti vidad">
+								<a href="./crea-ti-vidad.html">
+									<div class="stories__slide-pic"><img src="../img/og/crea-ti-vidad.png" alt="crea ti vidad" /></div>
+									<div class="stories__slide-txt">crea ti vidad</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="islas canarias">
+								<a href="./islas-canarias.html">
+									<div class="stories__slide-pic"><img src="../img/og/islas-canarias.png" alt="islas canarias" /></div>
+									<div class="stories__slide-txt">islas canarias</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="int erior design">
+								<a href="./int-erior-design.html">
+									<div class="stories__slide-pic"><img src="../img/og/int-erior-design.png" alt="int erior design" /></div>
+									<div class="stories__slide-txt">int erior design</div>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="stories__slide js-stories-popup-open" title="d eco">
+								<a href="./d-eco.html">
+									<div class="stories__slide-pic"><img src="../img/og/d-eco.png" alt="d eco" /></div>
+									<div class="stories__slide-txt">d eco</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav class="breadcrumbs">
+				<div class="container">
+					<a href="../main.html">Главная</a> / <span>render</span>
+				</div>
+			</nav>
+			<div class="tag">
+				<div class="container">
+					<div class="tag__group">
+						<h1 class="tag__title">render</h1>
+						<div class="tag__item-list">
+							<a href="../posts/./xx-cubox-xx-x-byx-xalejandrodacunha-1.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/eacb5f47d618546d280ee77431c34fdf/5E2730A4/t51.2885-15/e35/69998280_2457667731224796_40212421817948162_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2019-09-23">23 September 2019</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>22</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>🔼 CUBOX ▶️ / by: @alejandrodacunha</h2>
+										<p>🔼 CUBOX ▶️ / by: @alejandrodacunha<br/>.<br/><br/>.<br/> industrialdesignEuropa</p>
+										<p>...LEER MAS</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./xxblack-lovexxx-by-xalejandrodacunha-1.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/925051c9217cf564e468f5e0f2e57ee6/5E3754C3/t51.2885-15/e35/70405862_382531639305828_6235099595239356077_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2019-09-19">19 September 2019</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>17</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>◼️Black LOVE◼️/ by @alejandrodacunha</h2>
+										<p>◼️Black LOVE◼️/ by @alejandrodacunha<br/>.<br/><br/>.</p>
+										<p>...LEER MAS</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./xx-cubox-xx-x-byx-xalejandrodacunha.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/b2f88a1d3eeccbc8654cace4cb97dd54/5E3BC83C/t51.2885-15/e35/69465395_2368984593156934_8180609831766314427_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=110" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2019-09-23">23 September 2019</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>16</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>🆒 CUBOX ⬆️ / by: @alejandrodacunha</h2>
+										<p>🆒 CUBOX ⬆️ / by: @alejandrodacunha<br/>.<br/><br/>.</p>
+										<p>...LEER MAS</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./xx-modular-1.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/708359e410ee10840ce21c7c566e5919/5E1D9FD9/t51.2885-15/e35/69469815_171773537278955_6423128806204201622_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2019-09-12">12 September 2019</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>🍗 Modular 🍟</h2>
+										<p>🍗 Modular 🍟<br/>.<br/>.<br/><br/>.<br/>.</p>
+										<p>...LEER MAS</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./xx-home-trays-xx.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/95362208d1ca14e237b2530deb7a5cc6/5E2639DF/t51.2885-15/e35/69206581_677585362742614_6368658231856037478_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=110" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2019-09-09">09 September 2019</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>🍮 Home Trays 🥞</h2>
+										<p>🍮 Home Trays 🥞<br/>.<br/>.<br/><br/>.<br/>.<br/>trioTrays Industrialhome</p>
+										<p>...LEER MAS</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./xtap.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/ed6e211b789620a295dbd75612deea5e/5E241EB5/t51.2885-15/e35/66718155_101210744553854_7262608457774342325_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=102" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2019-08-29">29 August 2019</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>❗Tap sink ‼️ /</h2>
+										<p>❗Tap sink ‼️ / Bathroom accessories<br/>.<br/>.<br/>DAcun_locrea<br/>.<br/>.</p>
+										<p>...LEER MAS</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./hashonly-1.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/e8ae06e70b997b11afc107f3440f0869/5E01EC9A/t51.2885-15/e35/67594461_2013150668786192_4250225630841143589_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=108" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2019-08-24">24 August 2019</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>ONLY 3D and Render / NO</h2>
+										<p>ONLY 3D and Render / NO <br/>.<br/>.<br/>.<br/><br/>.<br/>.</p>
+										<p>...LEER MAS</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./hashonly-2.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/21f4581182be2809c636b110aa685e26/5E1C664C/t51.2885-15/e35/67638637_129994798263279_434389803561774166_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2019-08-24">24 August 2019</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>ONLY 3D and Render / NO Design</h2>
+										<p>ONLY 3D and Render / NO Design<br/>.<br/>.<br/><br/>.<br/>.</p>
+										<p>...LEER MAS</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./xxgriferías-de-baño.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/258ff1dddea181252148d5f125ccfafb/5E1DE7BA/t51.2885-15/e35/67745613_151637102612890_126921087234669678_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=110" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2019-08-21">21 August 2019</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>🚿Griferías de baño ; en reales 🛀</h2>
+										<p>🚿Griferías de baño ; en reales 🛀<br/>.<br/>.<br/>DAcun_locrea<br/>.<br/>.</p>
+										<p>...LEER MAS</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./3-dot-xx.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/19eea90ab3ca84bee3c0d23a776861db/5E39F52F/t51.2885-15/e35/67195354_178507723179745_9121534259882043865_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2019-08-19">19 August 2019</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>3. 🍽 Home</h2>
+										<p>3. 🍽 Home Trays & Plates<br/>.<br/>. <br/>https://www.linkedin.com/in/alejandro-da-cunha-502023125<br/>.<br/><br/>.<br/>.</p>
+										<p>...LEER MAS</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./2-dot-xx.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/532ee607adf9eddfefc89c5044f53f59/5E3A1A52/t51.2885-15/e35/67978114_2965802330159745_5913296294153649207_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=109" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2019-08-19">19 August 2019</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>2. 🍽 Home</h2>
+										<p>2. 🍽 Home Trays & Plates<br/>.<br/>.<br/><br/>.<br/>. <br/>https://www.linkedin.com/in/alejandro-da-cunha-502023125</p>
+										<p>...LEER MAS</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./1-dot-xx.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/fb5fb031e7344bef8b27909806e6955b/5E17059E/t51.2885-15/e35/66608995_126513495307116_2117460102754416355_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2019-08-19">19 August 2019</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>1. 🍽 Home</h2>
+										<p>1. 🍽 Home Trays & Plates<br/>.<br/>.<br/><br/>.<br/>. <br/>https://www.linkedin.com/in/alejandro-da-cunha-502023125</p>
+										<p>...LEER MAS</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./creatividad-y-buen-servicio-al-alcance-de-un-click.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/d71ab9b7f290233752b26905cb0aeaeb/5E18F1F6/t51.2885-15/e35/s1080x1080/42002993_1890785877670441_3772200921001657857_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-10-08">08 October 2018</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>Creatividad y buen servicio al alcance de un click</h2>
+										<p>Creatividad y buen servicio al alcance de un click<br/>¡Contáctame hoy! y realiza un presupuesto de tu proyecto<br/>DACUN_LoCrea<br/>.<br/>.<br/>Email: dacunestudio@gmail.com<br/>.<br/>.<br/> 3D</p>
+										<p>...LEER MAS</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./creatividad-y-calidad-al-alcance-de-un-click.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/5ee35d4af4e9f3aab7e8cb32dad99468/5E32350C/t51.2885-15/e35/s1080x1080/41994122_300250167248993_2061205092713224990_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-10-06">06 October 2018</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>Creatividad y calidad al alcance de un click</h2>
+										<p>Creatividad y calidad al alcance de un click<br/>¡Contáctame hoy! y realiza un presupuesto de tu proyecto<br/>DACUN_LoCrea<br/>.<br/>.<br/>Email: dacunestudio@gmail.com<br/>.<br/>.<br/> 3D</p>
+										<p>...LEER MAS</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./creatividad-y-buen-servicio-al-alcance-de-un-click-1.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/9638571b6ccf166247cf36ed08e0d245/5E314ADA/t51.2885-15/e35/s1080x1080/42522504_571132363356743_9006157709116657196_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-10-06">06 October 2018</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>Creatividad y buen servicio al alcance de un click</h2>
+										<p>Creatividad y buen servicio al alcance de un click<br/>¡Contáctame hoy! y realiza un presupuesto de tu proyecto<br/>DACUN_LoCrea<br/>.<br/>.<br/>Email: dacunestudio@gmail.com<br/>.<br/>.<br/> 3D</p>
+										<p>...LEER MAS</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./hotel-costa-los-gigantesxvilla-grupo-tenerife-.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/1a18ca6c9f9e8fd650f29011ada78265/5E035184/t51.2885-15/e35/s1080x1080/40469076_339499313457973_1599778104808315649_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-09-06">06 September 2018</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>Hotel Costa los Gigantes,VILLA Grupo Tenerife .</h2>
+										<p>Hotel Costa los Gigantes,VILLA Grupo Tenerife .<br/>¡Sígueme! y usa el HT YoSoyDacun para conocer mucho más<br/><br/>DacunLoCrea<br/>.<br/>.<br/> 3D</p>
+										<p>...LEER MAS</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./hotel-costa-los-gigantesxvilla-grupo-tenerife--1.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/6a549e9b3157bbe847b3da07ab90d940/5E33C0BA/t51.2885-15/e35/s1080x1080/40376768_2108143146180836_2754952067248036780_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=108" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-09-05">05 September 2018</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>Hotel Costa los Gigantes,VILLA Grupo Tenerife .</h2>
+										<p>Hotel Costa los Gigantes,VILLA Grupo Tenerife .<br/>¡Sígueme! y usa el HT YoSoyDacun para conocer mucho más<br/><br/>DacunLoCrea<br/>.<br/>.<br/> 3D</p>
+										<p>...LEER MAS</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./proyectox-hotel-costa-los-gigantesxvilla-grupo-tenerife--2.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/847abbdb6a08b7098f83c47a602dfaa6/5E2E387A/t51.2885-15/e35/s1080x1080/39591443_304867080317647_5588677579845901486_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=107" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2018-09-04">04 September 2018</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>Proyecto: Hotel Costa los Gigantes,VILLA Grupo Tenerife .</h2>
+										<p>Proyecto: Hotel Costa los Gigantes,VILLA Grupo Tenerife .<br/>¡Sígueme! y usa el HT YoSoyDacun para conocer mucho más<br/><br/>DacunLoCrea<br/>.<br/>.<br/> 3D</p>
+										<p>...LEER MAS</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./mordernos-y-funcionales-diseños-elaborados-con-material-de-desecho.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/b84a9a6299068e61feb99b6606db74b0/5E1B6E36/t51.2885-15/e35/20687072_422688041466005_6651893168763568128_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-08-09">09 August 2017</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>Mordernos y funcionales diseños elaborados con material de desecho DAcun_LoCrea</h2>
+										<p>Mordernos y funcionales diseños elaborados con material de desecho DAcun_LoCrea<br/>.<br/>.<br/>. <br/>Proyecto: Urban TRASH <br/>Contacto ESPAÑA: 📞 + (34) 655 27 22 89 <br/>Contacto VENEZUELA 📞 +(58) 0414 0142113<br/>.<br/>.<br/>.</p>
+										<p>...LEER MAS</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./tenemos-un-fuerte-compromiso-con-tu-bienestar.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/2db8b51a351beab0232696b59ed3d0cb/5E1E094D/t51.2885-15/e35/19052211_219934925193860_7929063189570912256_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=108" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-06-15">15 June 2017</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>Tenemos un fuerte compromiso con tu bienestar DAcun_LoCrea</h2>
+										<p>Tenemos un fuerte compromiso con tu bienestar DAcun_LoCrea<br/>.<br/>.<br/>. <br/>Proyecto: Clinic. Proyect <br/>Contacto ESPAÑA: 📞 + (34) 655 27 22 89 <br/>Contacto VENEZUELA 📞 +(58) 0414 0142113<br/>.<br/>.<br/>.</p>
+										<p>...LEER MAS</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./elementos-que-potencian-la-configuración-del-entorno.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/b8e3cfc24708f4ec8146e821dc923a82/5E25C79B/t51.2885-15/e35/18949811_253785008436414_8540213447831322624_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=106" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-06-12">12 June 2017</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>Elementos que potencian la configuración del entorno DAcun_LoCrea</h2>
+										<p>Elementos que potencian la configuración del entorno DAcun_LoCrea<br/>.<br/>.<br/>. <br/>Proyecto: Clinic. Proyect <br/>Contacto ESPAÑA: 📞 + (34) 655 27 22 89 <br/>Contacto VENEZUELA 📞 +(58) 0414 0142113<br/>.<br/>.<br/>.</p>
+										<p>...LEER MAS</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./xx-dacunxestudio-xx-3.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/6d85258f614a7435fa20079591564d15/5E3342C7/t51.2885-15/e35/18888590_137175606843192_2361256943554658304_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-06-08">08 June 2017</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>🔹 DAcun_Estudio 🔹</h2>
+										<p>🔹 DAcun_Estudio 🔹 <br/>SERVICIOS / DISEÑO INTERIORES<br/>.<br/>✔ <br/>ESPACIOS COMERCIALES<br/>.<br/>✔ REMODELACIÓN<br/>.<br/>✔ 3D / RENDERS<br/>.<br/>.<br/>. <br/>Contacto ESPAÑA: 📞 + (34) 655 27 22 89 <br/>Contacto VENEZUELA 📞 +(58) 0414 0142113<br/>.<br/>.<br/>.<br/> 3D</p>
+										<p>...LEER MAS</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./cuando-se-trata-de-las-reformas-en-tu-hogarx-es-imperativo-visualizar-tu-inversión.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/7007e7501d332766a686cd977cb40d84/5E301856/t51.2885-15/e35/17881863_225057441304950_4290870897926995968_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=106" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-04-12">12 April 2017</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>Cuando se trata de las reformas en tu hogar, es imperativo visualizar tu inversión DAcun_LoCrea</h2>
+										<p>Cuando se trata de las reformas en tu hogar, es imperativo visualizar tu inversión DAcun_LoCrea<br/>.<br/>.<br/>. <br/>Proyecto: RENDERS<br/>Contacto ESPAÑA: 📞 + (34) 655 27 22 89 <br/>Contacto VENEZUELA 📞 +(58) 0414 0142113<br/>.<br/>.<br/>.<br/>  instarender  tenerife</p>
+										<p>...LEER MAS</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./modelamos-tus-espacios.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/fbce6fc4402dbf303da662ab5c2a98b0/5E02E650/t51.2885-15/e35/17494852_1862221273993401_763732665122684928_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=109" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-04-06">06 April 2017</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>Modelamos tus espacios DAcun_LoCrea .</h2>
+										<p>Modelamos tus espacios DAcun_LoCrea . . .<br/>Proyecto: UTOPIA<br/>Contacto ESPAÑA: 📞 + (34) 655 27 22 89 <br/>Contacto VENEZUELA 📞 +(58) 0414 0142113 .<br/>. .<br/>  nature</p>
+										<p>...LEER MAS</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./alimentamos-tu-imaginación-con-los-xrenders-más-creativos.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/0a71873423d018d65b004f23bf663602/5E2F1522/t51.2885-15/e35/17332395_1222758391177523_8929661346857877504_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-03-19">19 March 2017</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>Alimentamos tu imaginación con los  renders más creativos DAcun_LoCrea</h2>
+										<p>Alimentamos tu imaginación con los  renders más creativos DAcun_LoCrea<br/>. .<br/>. <br/>Proyecto: CUTLERY <br/>Contacto ESPAÑA: 📞 + (34) 655 27 22 89 <br/>Contacto VENEZUELA 📞 +(58) 0414 0142113<br/>.<br/>.<br/>.<br/>  ing</p>
+										<p>...LEER MAS</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./todo-producto-requiere-de-un-envasex-nosotros-pensamos-en-todos-los-detalles.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/8d396990e8eaed1a96e531c5877012bb/5E1FE1F0/t51.2885-15/e35/17076908_1769681143350050_3265689357155041280_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=102" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-03-02">02 March 2017</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>Todo producto requiere de un envase, nosotros pensamos en todos los detalles DAcun_LoCrea</h2>
+										<p>Todo producto requiere de un envase, nosotros pensamos en todos los detalles DAcun_LoCrea<br/>. .<br/>.<br/>Proyecto: PROtotype <br/>Contacto ESPAÑA: 📞 + (34) 655 27 22 89 <br/>Contacto VENEZUELA 📞 +(58) 0414 0142113<br/>.<br/>.<br/>.</p>
+										<p>...LEER MAS</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./edificios-y-todo-tipo-de-estructuras-arquitectónicas-en-renders.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/56ee80aa2a3c6c53e6552e281f85b415/5E372C60/t51.2885-15/e35/15876705_579706138899949_8199607792340828160_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-01-12">12 January 2017</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>Edificios y todo tipo de estructuras arquitectónicas en renders DAcunLoCrea</h2>
+										<p>Edificios y todo tipo de estructuras arquitectónicas en renders DAcunLoCrea<br/>.<br/>.<br/>.<br/>Proyect: Renders for architecture thesis (UCV) <br/>Contact 📞 +(58) 0414 0142113<br/>.<br/>.<br/>.</p>
+										<p>...LEER MAS</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./rendersx-da-un-paso-hacia-el-futurox-divisa-tus-proyectos-en-planos-3d.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/c82ffcbb6b1db4d220bebbc02ba35d84/5E2F5E5C/t51.2885-15/e35/15877561_1474754229203074_997754373540937728_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=110" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2017-01-11">11 January 2017</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>Renders: da un paso hacia el futuro, divisa tus proyectos en planos 3D DAcunLoCrea</h2>
+										<p>Renders: da un paso hacia el futuro, divisa tus proyectos en planos 3D DAcunLoCrea<br/>.<br/>.<br/>.<br/>Proyect: Renders for architecture thesis (UCV) <br/>Contact 📞 +(58) 0414 -1340278<br/>.<br/>.<br/>.</p>
+										<p>...LEER MAS</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./la-naturaleza-como-parte-del-diseño.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/d107c337fad8c109859d489a5548fe95/5E37E6F7/t51.2885-15/e35/15624875_411870659156153_3246701199365242880_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2016-12-28">28 December 2016</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>La naturaleza como parte del diseño DAcun_LoCrea</h2>
+										<p>La naturaleza como parte del diseño DAcun_LoCrea<br/><br/>Proyecto: Casa CUBO<br/>Contacto 📞 +(58) 0414 -1340278</p>
+										<p>...LEER MAS</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./trasforma-tu-hogar-con-un-estilo-moderno.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/224c57a37e4d1b741727738c3fb1efac/5E1EEEF8/t51.2885-15/e35/14709534_226654301081043_6297196408474697728_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2016-11-03">03 November 2016</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>Trasforma tu hogar con un estilo moderno DAcunLoCREA</h2>
+										<p>Trasforma tu hogar con un estilo moderno DAcunLoCREA<br/>Proyecto: Casa LA, Industrial. <br/>Tlf: +(58) 0414 -1340278 / Síguenos @dacun_estudio<br/><br/> Ilustracion Interiorart</p>
+										<p>...LEER MAS</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./trasforma-tu-hogar-con-un-estilo-moderno-1.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/eceaffdb385c60d5a7b67313b1b7e075/5E1F77CC/t51.2885-15/e35/14733615_1816324638611751_2447093982384095232_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2016-11-02">02 November 2016</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>Trasforma tu hogar con un estilo moderno DAcunLoCREA</h2>
+										<p>Trasforma tu hogar con un estilo moderno DAcunLoCREA<br/><br/>Proyecto: Casa LA, Industrial. <br/>Tlf: +(58) 0414 -1340278 / Síguenos @DAcun_Estudio <br/> <br/> Ilustracion Interiorart</p>
+										<p>...LEER MAS</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./usa-el-ht.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/0d8ebfbe8c8ad537494ef4f467876827/5E186B5D/t51.2885-15/e35/14334290_1684597715201158_7825481609322168320_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=110" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2016-09-23">23 September 2016</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>Usa el HT DAcunLoCREA y da un vistazo a nuestra galería virtual.</h2>
+										<p>Usa el HT DAcunLoCREA y da un vistazo a nuestra galería virtual.<br/><br/>Proyecto: Tunantal <br/>Contacto: +(58) 0414 -1340278</p>
+										<p>...LEER MAS</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./render-x-fachadas-xx.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/8933a7e6685ab7352e5611d4824f20a3/5E362F1A/t51.2885-15/e35/14369085_1127053200709705_5973755684271947776_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2016-09-22">22 September 2016</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>RENDER | Fachadas 🔸</h2>
+										<p>RENDER | Fachadas 🔸 Planos 🔸 Modelos DAcunLoCREA <br/>Proyecto: Tunantal <br/>Contacto: +(58) 0414 -1340278<br/><br/> 3D</p>
+										<p>...LEER MAS</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./render-x-entorno-3d-para-la-visualización.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/b50bf50c3b8d99fb1e80c2a7ea6e2a25/5E36A49A/t51.2885-15/e35/14309753_291232874593498_1070489558799351808_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=110" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2016-09-22">22 September 2016</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>RENDER | Entorno 3D para la visualización</h2>
+										<p>RENDER | Entorno 3D para la visualización DAcunLoCREA <br/>Proyecto: Tunantal <br/>Contacto: +(58) 0414 -1340278<br/><br/> <br/> Ilustracion Interiorart  galleryart</p>
+										<p>...LEER MAS</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./renders-para-stand-x-por.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/6a5a24939179334ee4cbd10427ab6167/5E382A3A/t51.2885-15/e35/14359576_184607351949605_779323138_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2016-09-13">13 September 2016</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>RENDERS para Stand | por:</h2>
+										<p>RENDERS para Stand | por: DAcun Estudio<br/>Proyecto: Eco- Stand | CaféTé DAcunLoCREA<br/>Contacto +(58) 0414 -1340278</p>
+										<p>...LEER MAS</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>			
+		<div class="banner">
+			<div class="banner__overlay" id="js-banner-overlay" onclick="document.getElementById('js-banner-overlay').classList.toggle('open');document.getElementById('js-banner-main').classList.toggle('open');"></div>
+			<button class="btn banner__btn" onclick="document.getElementById('js-banner-overlay').classList.toggle('open');document.getElementById('js-banner-main').classList.toggle('open');">
+				<span><i class="fa fa-comments-o" aria-hidden="true"></i></span>
+			</button>
+			<div class="banner__main" id="js-banner-main">
+				<div class="banner__main-title">Contáctenos</div>
+				<div class="banner__main-row">
+					<div class="banner__main-item disable">
+						<div class="banner__main-item-ring"><i class="fa fa-whatsapp" aria-hidden="true"></i></div>
+						<div class="banner__main-item-txt">WhatsApp</div>
+					</div>
+
+					<div class="banner__main-item disable">
+						<div class="banner__main-item-ring"><i class="fa fa-telegram" aria-hidden="true"></i></div>
+						<div class="banner__main-item-txt">Telegram</div>
+					</div>
+
+					<div class="banner__main-item disable">
+						<div class="banner__main-item-ring"><i class="fa fa-phone-square" aria-hidden="true"></i></div>
+						<div class="banner__main-item-txt">Viber</div>
+					</div>
+
+
+					<a href="https://www.instagram.com/dacun_estudio" target="_blank" 
+					class="banner__main-item">
+						<div class="banner__main-item-ring"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+						<div class="banner__main-item-txt">Instagram</div>
+					</a>
+
+				</div>
+			</div>
+		</div>			
+	</div>
+	<!--jQuery-->
+	<script src="../js/vendors/jquery.min.js"></script>
+	<script src="../js/vendors/jquery.loadScroll.js"></script>
+	<!--device-->
+	<script src="../js/vendors/slick.min.js"></script>
+	<!--init-->
+	<script src="../js/jquery.init.js"></script>
+	<!--my scripts-->
+	<script src="../js/jquery.main.js"></script>
+</body>
+</html>
