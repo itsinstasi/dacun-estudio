@@ -1,2 +1,2 @@
 ﻿User-agent: *
-Sitemap: https://dacun-estudio.itsinsta.site/sitemap.xml
+Sitemap: http://dacun-estudio.itsinsta.site/sitemap.xml
